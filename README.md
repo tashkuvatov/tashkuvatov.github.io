@@ -1,2 +1,2 @@
-# tashkuvatov.github.io
-qullanma.uz saytining githubdagi versiyasi
+# Нодир Ташкуватов
+qullanma.uz самая начальная версия (html/css)
