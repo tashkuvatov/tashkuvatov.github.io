@@ -1,0 +1,171 @@
+/*****************vars**********/
+@bg-color: #e8e8e8;
+@main-color: #2879f3;
+@more-color: #f5a019;
+@font-size: 24px;
+@gray: #6e6e6e;
+
+
+/************mixins*****************/
+.ttu() {
+	text-transform: uppercase;
+}
+
+.fwbold() {
+	font-weight: bold;
+}
+
+.border()  {
+	border: 2px solid red;
+}
+
+
+/************header**************/
+body {
+	font-family: Arial, sans-serif;
+}
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+.nav-menu {
+	li {
+		display: inline-block;
+		padding-left: 50px;
+	}
+	a {
+		text-decoration: none;
+		.ttu;
+	}
+}
+.header {
+	/* height: 100vh; */
+	background: @bg-color;
+	padding-bottom: 100px;
+	padding-top: 1px;
+}
+.first-question {
+	font-size: @font-size;
+	color: @gray;
+	.ttu;
+	margin-top: 24px;
+}
+.second-question {
+	.first-question;
+	margin-top: 30px;
+	text-align: right;
+	font-size: 36px;
+}
+.third-question {
+	.first-question;
+	margin-top: -20px;
+}
+.main-title {	
+	background: @main-color;
+	border-radius: 7px;
+	padding-top: 21px;
+	padding-bottom: 21px;
+	span {
+		font-size: @font-size;
+		.ttu;
+		color: #fff;
+	}
+	h1 {
+		font-size: 60px;
+		color: #fff;
+		.ttu;
+		.fwbold;
+	}
+}
+.main-buttons {
+	margin-top: 32px;
+
+	.more-btn {
+		color: #fff;
+		.ttu;
+		.fwbold;
+		font-size: 30px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		margin-bottom: 15px;
+		
+	}
+	.download-btn {
+		.more-btn;
+		.dwnld-link {
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+}
+/************contact-us**************/
+.contact-us {
+	h2 {
+		.ttu;
+		margin-top: 50px;
+	}
+	p {
+		margin-top: 0;
+		font-size: 30px;
+		text-align: justify;
+	}
+	.contact-title {
+		margin-top: 50px;
+		font-size: 48px;
+		.fwbold;
+	}
+}
+.form {
+	border: 2px solid #a4a4a4;
+	.form-header {
+		font-size: @font-size;
+		.fwbold;
+	}
+	input {
+		margin-bottom: 25px;
+		border: 2px solid #a4a4a4
+	}
+	&-btn {
+		margin-bottom: 48px;
+	}
+}
+
+.contact-us-info {
+	margin-top: 60px;
+	margin-bottom: 100px;
+}
+
+/************footer**************/
+
+.footer {
+	height: 150px;
+	background: #727272;
+}
+
+.tlgrm-address {
+	padding-top: 18px;
+	// .border;
+	img {
+		display: inline-block;
+		width: 30px;
+		height:30px;
+	}
+	p {
+		display: inline-block;
+		color: @bg-color;
+	}
+	a {
+		color: #fff;
+		text-decoration: none;
+	}
+}
+
+.phone-number {
+	.tlgrm-address;
+	padding-top: 0;
+	margin-left: -3px;
+	img {
+		width: 35px;
+		height: 35px;
+	}
+}

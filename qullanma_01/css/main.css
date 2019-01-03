@@ -1,0 +1,163 @@
+/*****************vars**********/
+/************mixins*****************/
+/************header**************/
+body {
+  font-family: Arial, sans-serif;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.nav-menu li {
+  display: inline-block;
+  padding-left: 50px;
+}
+.nav-menu a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.header {
+  /* height: 100vh; */
+  background: #e8e8e8;
+  padding-bottom: 100px;
+  padding-top: 1px;
+}
+.first-question {
+  font-size: 24px;
+  color: #6e6e6e;
+  text-transform: uppercase;
+  margin-top: 24px;
+}
+.second-question {
+  font-size: 24px;
+  color: #6e6e6e;
+  text-transform: uppercase;
+  margin-top: 24px;
+  margin-top: 30px;
+  text-align: right;
+  font-size: 36px;
+}
+.third-question {
+  font-size: 24px;
+  color: #6e6e6e;
+  text-transform: uppercase;
+  margin-top: 24px;
+  margin-top: -20px;
+}
+.main-title {
+  background: #2879f3;
+  border-radius: 7px;
+  padding-top: 21px;
+  padding-bottom: 21px;
+}
+.main-title span {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.main-title h1 {
+  font-size: 60px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.main-buttons {
+  margin-top: 32px;
+}
+.main-buttons .more-btn {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+.main-buttons .download-btn {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+.main-buttons .download-btn .dwnld-link {
+  color: #fff;
+  text-decoration: none;
+}
+/************contact-us**************/
+.contact-us h2 {
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+.contact-us p {
+  margin-top: 0;
+  font-size: 30px;
+  text-align: justify;
+}
+.contact-us .contact-title {
+  margin-top: 50px;
+  font-size: 48px;
+  font-weight: bold;
+}
+.form {
+  border: 2px solid #a4a4a4;
+}
+.form .form-header {
+  font-size: 24px;
+  font-weight: bold;
+}
+.form input {
+  margin-bottom: 25px;
+  border: 2px solid #a4a4a4;
+}
+.form-btn {
+  margin-bottom: 48px;
+}
+.contact-us-info {
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+/************footer**************/
+.footer {
+  height: 150px;
+  background: #727272;
+}
+.tlgrm-address {
+  padding-top: 18px;
+}
+.tlgrm-address img {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+.tlgrm-address p {
+  display: inline-block;
+  color: #e8e8e8;
+}
+.tlgrm-address a {
+  color: #fff;
+  text-decoration: none;
+}
+.phone-number {
+  padding-top: 18px;
+  padding-top: 0;
+  margin-left: -3px;
+}
+.phone-number img {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+.phone-number p {
+  display: inline-block;
+  color: #e8e8e8;
+}
+.phone-number a {
+  color: #fff;
+  text-decoration: none;
+}
+.phone-number img {
+  width: 35px;
+  height: 35px;
+}
