@@ -1,5 +1,5 @@
 # Нодир Ташкуватов
-qullanma.uz самая начальная версия (html/css)
+web developer
 
 
 [qullanma.uz](https://tashkuvatov.github.io/qullanma_01/ "Самая первая версия сайта qullanma.uz") - самая первая, статическая версия сайта qullanma.uz
