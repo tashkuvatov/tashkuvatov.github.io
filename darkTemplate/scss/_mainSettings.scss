@@ -1,0 +1,55 @@
+//MAIN SETTINGS
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+html {
+	min-width: 320px;
+	scroll-behavior: smooth;
+}
+body {
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+}
+section {
+	padding: 105px 0;
+}
+.container {
+	max-width: 1170px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+button,
+button:active,
+button:focus {
+	outline: none;
+	// box-shadow: none;
+	border: none;
+}
+
+// VARIABLES
+// colors
+$color-01: #111111;
+$color-02: #fcac45;
+
+// titles h3
+%title {
+	position: relative;
+	text-align: center;
+	font-weight: 400;
+	z-index: 9;
+	font-size: 34px;
+	line-height: 38px;
+	color: #999999;
+	text-transform: uppercase;
+}
+%title-span {
+	font-weight: 700;
+	color: $color-02;
+}

@@ -1,0 +1,51 @@
+@import "_mainSettings";
+
+.burger {
+	display: none;
+	transition: all 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	position: absolute;
+	right: 15px;
+	z-index: 9;
+	width: 30px;
+	height: 30px;
+	background: transparent;
+	&._active .burger__line {
+		background-color: transparent;
+	}
+	&._active .burger__line::after,
+	&._active .burger__line::before {
+		top: 0;
+		transform: rotate(405deg);
+		transition: all 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.25s,
+			top 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	}
+	&._active .burger__line::after {
+		transform: rotate(-405deg);
+		transition: all 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.25s,
+			top 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	}
+	&__line {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%);
+		width: 20px;
+		height: 2px;
+		background: $color-02;
+
+		&::after,
+		&::before {
+			position: absolute;
+			content: "";
+			width: 20px;
+			height: 2px;
+			background-color: $color-02;
+			top: 5px;
+			transition: all 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55),
+				top 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.25s;
+		}
+		&::after {
+			top: -5px;
+		}
+	}
+}

@@ -1,0 +1,115 @@
+@import "_mainSettings";
+@import "_burgerMenu";
+
+.header {
+	position: fixed;
+	top: 0;
+	z-index: 99;
+	width: 100%;
+	background: $color-01;
+	padding-top: 60px;
+	padding-bottom: 25px;
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.mobile {
+			&__nav-wrapper {
+				display: flex;
+				position: absolute;
+			}
+			&__nav {
+				display: flex;
+				position: fixed;
+				top: 0;
+				right: 0;
+				height: 100vh;
+				min-width: 320px;
+				background: rgba(26, 26, 27, 0.911);
+				transform: translate(320px);
+				transition: transform 0.25s cubic-bezier(1, 0, 0, 1);
+				align-items: center;
+				justify-content: center;
+			}
+			&__menu {
+				list-style: none;
+				text-align: center;
+				li {
+					margin: 25px;
+					a {
+						text-decoration: none;
+						text-transform: uppercase;
+						color: #ffffff;
+						font-size: 28px;
+						line-height: 50px;
+						position: relative;
+
+						&:hover {
+							color: $color-02;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&__menu {
+		display: flex;
+		justify-content: space-between;
+		li {
+			// border: 1px solid red;
+			list-style: none;
+			margin-left: 27px;
+			padding-bottom: 20px;
+			overflow: hidden;
+			a {
+				position: relative;
+				text-decoration: none;
+				text-transform: uppercase;
+				color: #ffffff;
+				font-weight: 600;
+
+				&::after,
+				&::before {
+					position: absolute;
+					display: block;
+					content: "";
+					width: 0;
+					height: 2px;
+					bottom: -105%;
+					right: 0;
+					transition: all 0.25s ease;
+				}
+				&::before {
+					background-color: #646363;
+					transition: all 0.25s ease;
+				}
+				&::after {
+					background-color: $color-02;
+					transition: all 0.4s ease-out 0.3s;
+				}
+				&:hover {
+					color: $color-02;
+					&::before {
+						width: 100%;
+						left: 0;
+					}
+					&::after {
+						width: 50%;
+						transform: translateX(100%);
+						left: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+.logo {
+	position: relative;
+	z-index: 9;
+}
+
+main {
+	margin-top: 105px;
+}

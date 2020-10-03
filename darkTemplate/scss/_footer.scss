@@ -1,0 +1,35 @@
+.footer {
+	background-color: #222222;
+	padding: 30px 0;
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+.copyrigt {
+	color: #ffffff;
+}
+.socials {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+	li {
+		list-style: none;
+		margin-left: 14px;
+	}
+}
+.ico-1 {
+}
+.ico {
+}
+.ico-2 {
+}
+.ico-3 {
+}
+.ico-4 {
+}
+.ico-5 {
+}

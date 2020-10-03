@@ -1,0 +1,101 @@
+.about {
+	padding-top: 121px;
+	// .anchor {
+	// 	display: block;
+	// 	height: 121px;
+	// 	margin-top: -121px;
+	// 	visibility: hidden;
+	// }
+	&__wrapper {
+		display: flex;
+	}
+
+	&__img {
+		position: relative;
+	}
+
+	&__text {
+		display: block;
+		h3 {
+			font-size: 34px;
+			color: #222222;
+			font-weight: 300;
+			text-transform: uppercase;
+			padding: 0 0 20px 0;
+			margin-bottom: 30px;
+		}
+		&-title {
+			display: block;
+			position: relative;
+			&::after {
+				content: "";
+				position: absolute;
+				display: block;
+				width: 98px;
+				height: 4px;
+				background-color: #fdc680;
+				bottom: 0;
+				left: 0;
+			}
+		}
+		p {
+			font-size: 18px;
+			line-height: 25px;
+			color: #6c6c6c;
+			margin-bottom: 45px;
+		}
+	}
+
+	&__text-list {
+		list-style: none;
+	}
+
+	&__text-list-item {
+		color: #5a5a5a;
+		line-height: 25px;
+		span {
+			font-size: 18px;
+			font-weight: 500;
+		}
+		&::before {
+			content: url(../img/icons/radioBtn.png);
+			height: 25px;
+			margin-right: 10px;
+		}
+	}
+
+	&__text-button {
+		display: inline-block;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-size: 12px;
+		color: #616161;
+		padding: 17px 22px 17px 22px;
+		border: 1px solid #616161;
+		border-radius: 2px;
+		margin-top: 45px;
+		margin-left: 10px;
+		transition: all 0.25s ease;
+		&::before {
+			content: url(../img/bag.png);
+			margin-right: 10px;
+		}
+		&:hover {
+			color: $color-02;
+			border: 1px solid $color-02;
+			box-shadow: 0 0 10px $color-02;
+			transition: all 0.24s ease;
+		}
+	}
+}
+.regular-title {
+	display: block;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 500;
+	color: #636363;
+	line-height: 37px;
+}
+.bold-title {
+	font-weight: 700;
+}
